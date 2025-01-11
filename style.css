@@ -582,6 +582,12 @@ body {
   margin: 0;
   margin-right: 10px;
 }
+.slider .single-slider .btn:before {
+  background: var(--text-primary);
+}
+.slider .single-slider .btn:hover {
+  color: var(--primary);
+}
 .slider .single-slider .btn:last-child {
   margin: 0;
 }
@@ -592,6 +598,10 @@ body {
 .slider .single-slider .btn.primary:before {
   background: var(--primary);
 }
+.slider .single-slider .btn.primary:hover {
+  color: var(--text-primary);
+}
+
 .slider .owl-carousel .owl-nav {
   margin: 0;
   position: absolute;
