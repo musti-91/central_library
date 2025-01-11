@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="keywords" content="University, kirkuk, login page, central bank" />
+  <meta name="description" content="University kirkuk login page" />
+  <meta name="copyright" content="University kirkuk" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Title -->
+  <title>Central Library | Services</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="../img/favicon.png" />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+    rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <!-- Nice Select CSS -->
+  <link rel="stylesheet" href="../css/nice-select.css" />
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="../css/font-awesome.min.css" />
+  <!-- icofont CSS -->
+  <link rel="stylesheet" href="../css/icofont.css" />
+  <!-- Slicknav -->
+  <link rel="stylesheet" href="../css/slicknav.min.css" />
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="../css/owl-carousel.css" />
+  <!-- Datepicker CSS -->
+  <link rel="stylesheet" href="../css/datepicker.css" />
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="../css/animate.min.css" />
+  <!-- Magnific Popup CSS -->
+  <link rel="stylesheet" href="../css/magnific-popup.css" />
+
+  <!-- Medipro CSS -->
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              first: "#69359c",
+              second: "#50404d",
+              third: "#9400d3",
+              fourth: "#9932cc",
+              fifth: "#663399",
+              med_purple: "#9370db",
+            },
+
+            "font-family": {
+              sans: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      }
+    </script>
+</head>
+
+<body>
+
+  <section class="bg-white">
+    <div class="lg:grid lg:min-h-screen lg:grid-cols-12">
+      <aside class="relative block h-16 lg:order-last lg:col-span-5 lg:h-full xl:col-span-6">
+        <img alt="side image"
+          src="../img/slider2.jpg"
+          class="absolute inset-0 h-full w-full object-cover" />
+      </aside>
+
+      <main class="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6">
+        <div class="max-w-2xl lg:max-w-5xl">
+          <a class="flex items-center justify-center text-primary" href="../index.html">
+            <span class="sr-only">Home</span>
+            <img src="../img/logo.png" alt="logo" class="w-[250px] h-[250px]" />
+          </a>
+
+          <h1 class="mt-6 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
+            Welcome to Central Library
+          </h1>
+
+          <p class="mt-4 leading-relaxed text-gray-500">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            nam dolorum aliquam, quibusdam aperiam voluptatum.
+          </p>
+
+          <form  class="mt-8 grid grid-cols-6 gap-6" id="register_form">
+
+            <div class="col-span-6">
+              <label htmlFor="input_email" class="block text-sm font-medium text-gray-700">
+                Email
+              </label>
+
+              <input type="email" id="input_email" name="email"
+                class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />
+              <p class="text-red-500" id="error_email"></p>
+            </div>
+
+            <div class="col-span-6 sm:col-span-3">
+              <label htmlFor="input_password" class="block text-sm font-medium text-gray-700">
+                Password
+              </label>
+
+              <input type="password" id="input_password" name="password"
+                class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />
+              <p class="text-red-500" id="error_password"></p>
+            </div>
+
+            <div class="col-span-6 sm:col-span-3">
+              <label htmlFor="input_password_confirmation" class="block text-sm font-medium text-gray-700">
+                Password Confirmation
+              </label>
+
+              <input type="password" id="input_password_confirmation" name="password_confirmation"
+                class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />
+              <p class="text-red-500" id="error_password_confirmation"></p>
+            </div>
+            <div class="col-span-6 sm:col-span-3">
+              <label htmlFor="select_role" class="block text-sm font-medium text-gray-700">
+                Role
+              </label>
+              <select
+              id="select_role" name="role"
+              required
+                class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm">
+                <option value=""></option>
+                <option value="teacher">Teacher</option>
+                <option value="student">Student</option>
+                <option value="admin">Admin</option>
+              </select>
+              <p class="text-red-500" id="error_role"></p>
+            </div>
+
+            <div class="col-span-6">
+              <p class="text-sm text-gray-500">
+                By creating an account, you agree to our
+                <a href="terms-and-conditions.html" class="text-gray-700 underline">
+                  
+                  terms and conditions
+                </a>
+                and
+                <a href="privacy-policy.html" class="text-gray-700 underline">
+                  
+                  privacy policy
+                </a>
+                .
+              </p>
+            </div>
+
+            <div class="col-span-6 sm:flex sm:items-center sm:gap-4">
+              <button
+              type="submit"
+              id="register_button"
+                class="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500">
+                Create an account
+              </button>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- jquery Min JS -->
+  <script src="../js/jquery.min.js"></script>
+  <!-- jquery Migrate JS -->
+  <script src="../js/jquery-migrate-3.0.0.js"></script>
+  <!-- jquery Ui JS -->
+  <script src="../js/jquery-ui.min.js"></script>
+  <!-- Easing JS -->
+  <script src="../js/easing.js"></script>
+  <!-- Color JS -->
+  <script src="../js/colors.js"></script>
+  <!-- Popper JS -->
+  <script src="../js/popper.min.js"></script>
+  <!-- Bootstrap Datepicker JS -->
+  <script src="../js/bootstrap-datepicker.js"></script>
+  <!-- Jquery Nav JS -->
+  <script src="../js/jquery.nav.js"></script>
+  <!-- Slicknav JS -->
+  <script src="../js/slicknav.min.js"></script>
+  <!-- ScrollUp JS -->
+  <script src="../js/jquery.scrollUp.min.js"></script>
+  <!-- Niceselect JS -->
+  <script src="../js/niceselect.js"></script>
+  <!-- Tilt Jquery JS -->
+  <script src="../js/tilt.jquery.min.js"></script>
+  <!-- Owl Carousel JS -->
+  <script src="../js/owl-carousel.js"></script>
+  <!-- counterup JS -->
+  <script src="../js/jquery.counterup.min.js"></script>
+  <!-- Steller JS -->
+  <script src="../js/steller.js"></script>
+  <!-- Wow JS -->
+  <script src="../js/wow.min.js"></script>
+  <!-- Magnific Popup JS -->
+  <script src="../js/jquery.magnific-popup.min.js"></script>
+  <!-- Counter Up CDN JS -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <!-- Google Map API Key JS -->
+  <script src="https://maps.google.com/maps/api/js?key=GOOGLE_MAPS_API_KEY""></script>
+    <!-- Gmaps JS -->
+    <script src=" ../js/gmaps.min.js"></script>
+  <!-- Map Active JS -->
+  <script src="../js/map-active.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="../js/bootstrap.min.js"></script>
+  <!-- Main JS -->
+  <script src="../js/main.js"></script>
+  <script src="../js/login.js"></script>
+</body>
+
+</html>
