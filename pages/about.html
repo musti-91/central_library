@@ -4,16 +4,16 @@
     <!-- Meta Tags -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="keywords" content="Site keywords here" />
-    <meta name="description" content="" />
-    <meta name="copyright" content="" />
+    <meta name="keywords" content="university kirkuk technology student" />
+    <meta name="description" content="Student page" />
+    <meta name="copyright" content="university of kirkuk" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Title -->
-    <title>[MyWebsite] About</title>
+    <title>uk.com | About</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/favicon.png" />
+    <link rel="icon" href="../img/favicon.png" />
 
     <!-- Google Fonts -->
     <link
@@ -22,29 +22,51 @@
     />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <!-- Nice Select CSS -->
-    <link rel="stylesheet" href="css/nice-select.css" />
+    <link rel="stylesheet" href="../css/nice-select.css" />
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
     <!-- icofont CSS -->
-    <link rel="stylesheet" href="css/icofont.css" />
+    <link rel="stylesheet" href="../css/icofont.css" />
     <!-- Slicknav -->
-    <link rel="stylesheet" href="css/slicknav.min.css" />
+    <link rel="stylesheet" href="../css/slicknav.min.css" />
     <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="css/owl-carousel.css" />
+    <link rel="stylesheet" href="../css/owl-carousel.css" />
     <!-- Datepicker CSS -->
-    <link rel="stylesheet" href="css/datepicker.css" />
+    <link rel="stylesheet" href="../css/datepicker.css" />
     <!-- Animate CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="../css/animate.min.css" />
     <!-- Magnific Popup CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="../css/magnific-popup.css" />
 
     <!-- Medipro CSS -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              first: "#69359c",
+              second: "#50404d",
+              third: "#9400d3",
+              fourth: "#9932cc",
+              fifth: "#663399",
+              med_purple: "#9370db",
+            },
+
+            "font-family": {
+              sans: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      }
+    </script>
   </head>
+
   <body>
     <!-- Preloader -->
     <div class="preloader">
@@ -63,7 +85,7 @@
     <!-- End Preloader -->
 
     <!-- Header Area -->
-    <header class="header">
+    <header class="header bg-first text-white">
       <!-- Topbar -->
       <div class="topbar">
         <div class="container">
@@ -71,18 +93,27 @@
             <div class="col-lg-6 col-md-5 col-12">
               <!-- Contact -->
               <ul class="top-link">
-                <li><a href="about.html">About</a></li>
-                <li><a href="collages.html">Collages</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="faq.html">FAQ</a></li>
+                <!-- Todo Language selector  -->
               </ul>
               <!-- End Contact -->
             </div>
             <div class="col-lg-6 col-md-7 col-12">
               <!-- Top Contact -->
               <ul class="top-contact">
-                <li><i class="fa fa-phone"></i>+880 1234 56789</li>
-                <li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">support@yourmail.com</a></li>
+                <!-- <li>
+                  <i class="fa fa-facebook text-white hover:text-second"></i>
+                  <a
+                    class="text-white hover:text-second"
+                    href="https://www.facebook.com/people/كلية-علوم-الحاسوب-وتكنولوجيا-المعلومات-جامعة-كركوك/100063850253669/"
+                    >Facebook</a
+                  >
+                </li> -->
+                <li>
+                  <i class="fa fa-envelope text-white hover:text-second"></i
+                  ><a class="text-white hover:text-second" href="mailto:csit_college_kirkuk@uokirkuk.edu.iq"
+                    >csit_college_kirkuk@uokirkuk.edu.iq</a
+                  >
+                </li>
               </ul>
               <!-- End Top Contact -->
             </div>
@@ -95,57 +126,39 @@
         <div class="container">
           <div class="inner">
             <div class="row">
-              <div class="col-lg-3 col-md-3 col-12">
+              <div>
                 <!-- Start Logo -->
-                <div class="logo">
-                  <a href="index.html"><img src="img/logo.png" alt="#" /></a>
+                <div class="logo flex justify-center items-center w-[100px] md:w-[120px]">
+                  <a href="../index.html"><img src="../img/logo.png" alt="logo" /></a>
                 </div>
                 <!-- End Logo -->
                 <!-- Mobile Nav -->
-                <div class="mobile-nav"></div>
+                <div id="mobile-nav"></div>
                 <!-- End Mobile Nav -->
               </div>
-              <div class="col-lg-7 col-md-9 col-12">
+              <div class="ml-5">
                 <!-- Main Menu -->
                 <div class="main-menu">
                   <nav class="navigation">
                     <ul class="nav menu">
-                      <li class="active">
-                        <a href="index.html">Home <i class="icofont-rounded-down"></i></a>
-                        <ul class="dropdown">
-                          <li><a href="index.html">Home Page 1</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="collages.html">Collages </a></li>
-                      <li><a href="services.html">Services </a></li>
                       <li>
-                        <a href="#">Pages <i class="icofont-rounded-down"></i></a>
-                        <ul class="dropdown">
-                          <li><a href="404.html">404 Error</a></li>
-                        </ul>
+                        <a href="../index.html">Home</a>
                       </li>
-                      <li>
-                        <a href="#">Blogs <i class="icofont-rounded-down"></i></a>
-                        <ul class="dropdown">
-                          <li><a href="blog-single.html">Blog Details</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="contact.html">Contact Us</a></li>
+                      <li><a href="software_department.html">Software department</a></li>
+                      <li><a href="computer_science.html">Computer science</a></li>
+                      <li><a href="network_department.html">Network department</a></li>
+                      <li><a href="news.html">News</a></li>
+                      <li class="active"><a href="about.html">About</a></li>
                     </ul>
                   </nav>
                 </div>
-                <!--/ End Main Menu -->
-              </div>
-              <div class="col-lg-2 col-12">
-                <div class="get-quote">
-                  <a href="news.html" class="btn">Latest news</a>
-                </div>
+                <!-- End Main Menu -->
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!--/ End Header Inner -->
+      <!-- End Header Inner -->
     </header>
     <!-- End Header Area -->
 
@@ -155,12 +168,7 @@
         <div class="bread-inner">
           <div class="row">
             <div class="col-12">
-              <h2>Blog Single</h2>
-              <ul class="bread-list">
-                <li><a href="index.html">Home</a></li>
-                <li><i class="icofont-simple-right"></i></li>
-                <li class="active">Blog Single</li>
-              </ul>
+              <h2>About page</h2>
             </div>
           </div>
         </div>
@@ -178,7 +186,7 @@
                 <div class="single-main">
                   <!-- News Head -->
                   <div class="news-head">
-                    <img src="img/blog1.jpg" alt="#" />
+                    <img src="../img/blog1.jpg" alt="#" />
                   </div>
                   <!-- News Title -->
                   <h1 class="news-title">
@@ -188,7 +196,7 @@
                   <div class="meta">
                     <div class="meta-left">
                       <span class="author"
-                        ><a href="#"><img src="img/author1.jpg" alt="#" />Naimur Rahman</a></span
+                        ><a href="#"><img src="../img/author1.jpg" alt="#" />Naimur Rahman</a></span
                       >
                       <span class="date"><i class="fa fa-clock-o"></i>03 Feb 2019</span>
                     </div>
@@ -220,12 +228,12 @@
                       <div class="row">
                         <div class="col-lg-6 col-md-6 col-12">
                           <div class="single-image">
-                            <img src="img/blog2.jpg" alt="#" />
+                            <img src="../img/blog2.jpg" alt="#" />
                           </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-12">
                           <div class="single-image">
-                            <img src="img/blog3.jpg" alt="#" />
+                            <img src="../img/blog3.jpg" alt="#" />
                           </div>
                         </div>
                       </div>
@@ -303,7 +311,7 @@
                     <div class="single-comments">
                       <div class="main">
                         <div class="head">
-                          <img src="img/author1.jpg" alt="#" />
+                          <img src="../img/author1.jpg" alt="#" />
                         </div>
                         <div class="body">
                           <h4>Afsana Mimi</h4>
@@ -325,7 +333,7 @@
                     <div class="single-comments left">
                       <div class="main">
                         <div class="head">
-                          <img src="img/author2.jpg" alt="#" />
+                          <img src="../img/author2.jpg" alt="#" />
                         </div>
                         <div class="body">
                           <h4>Naimur Rahman</h4>
@@ -347,7 +355,7 @@
                     <div class="single-comments">
                       <div class="main">
                         <div class="head">
-                          <img src="img/author3.jpg" alt="#" />
+                          <img src="../img/author3.jpg" alt="#" />
                         </div>
                         <div class="body">
                           <h4>Suriya Molharta</h4>
@@ -438,7 +446,7 @@
                 <!-- Single Post -->
                 <div class="single-post">
                   <div class="image">
-                    <img src="img/blog-sidebar1.jpg" alt="#" />
+                    <img src="../img/blog-sidebar1.jpg" alt="#" />
                   </div>
                   <div class="content">
                     <h5><a href="#">We have annnocuced our new product.</a></h5>
@@ -452,7 +460,7 @@
                 <!-- Single Post -->
                 <div class="single-post">
                   <div class="image">
-                    <img src="img/blog-sidebar2.jpg" alt="#" />
+                    <img src="../img/blog-sidebar2.jpg" alt="#" />
                   </div>
                   <div class="content">
                     <h5><a href="#">Top five way for solving teeth problems.</a></h5>
@@ -466,7 +474,7 @@
                 <!-- Single Post -->
                 <div class="single-post">
                   <div class="image">
-                    <img src="img/blog-sidebar3.jpg" alt="#" />
+                    <img src="../img/blog-sidebar3.jpg" alt="#" />
                   </div>
                   <div class="content">
                     <h5><a href="#">We provide highly business soliutions.</a></h5>
@@ -518,7 +526,10 @@
                 <!-- Social -->
                 <ul class="social">
                   <li>
-                    <a href="#"><i class="icofont-facebook"></i></a>
+                    <a
+                      href="https://www.facebook.com/people/كلية-علوم-الحاسوب-وتكنولوجيا-المعلومات-جامعة-كركوك/100063850253669/"
+                      ><i class="icofont-facebook"></i
+                    ></a>
                   </li>
                   <li>
                     <a href="#"><i class="icofont-google-plus"></i></a>
@@ -543,38 +554,27 @@
                   <div class="col-lg-6 col-md-6 col-12">
                     <ul>
                       <li>
-                        <a href="index.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a>
+                        <a href="../index.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a>
                       </li>
                       <li>
-                        <a href="about.html"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a>
-                      </li>
-                      <li>
-                        <a href="services.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Cases</a>
-                      </li>
-                      <li>
-                        <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Other Links</a>
+                        <a href="news.html"><i class="fa fa-caret-right" aria-hidden="true"></i>news</a>
                       </li>
                     </ul>
                   </div>
                   <div class="col-lg-6 col-md-6 col-12">
                     <ul>
                       <li>
-                        <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Consuling</a>
+                        <a href="computer_science.html"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i>Computer science</a
+                        >
                       </li>
                       <li>
-                        <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Finance</a>
+                        <a href="network_department.html"
+                          ><i class="fa fa-caret-right" aria-hidden="true"></i>Network department</a
+                        >
                       </li>
                       <li>
-                        <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Testimonials</a>
-                      </li>
-                      <li>
-                        <a href="faq.html"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a>
-                      </li>
-                      <li>
-                        <a href="contact.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a>
+                        <a href="about.html"><i class="fa fa-caret-right" aria-hidden="true"></i>About collage</a>
                       </li>
                     </ul>
                   </div>
@@ -586,31 +586,9 @@
                 <h2>Open Hours</h2>
                 <p>Lorem ipsum dolor sit ame consectetur adipisicing elit do eiusmod tempor incididunt.</p>
                 <ul class="time-sidual">
-                  <li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
-                  <li class="day">Saturday <span>9.00-18.30</span></li>
-                  <li class="day">Monday - Thusday <span>9.00-15.00</span></li>
+                  <li class="day">Sunday - Thursday <span>8.00-20.00</span></li>
+                  <li class="day">Friday - Saturday <span>Weekend</span></li>
                 </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="single-footer">
-                <h2>Newsletter</h2>
-                <p>
-                  subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit,
-                </p>
-                <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-                  <input
-                    name="email"
-                    placeholder="Email Address"
-                    class="common-input"
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Your email address'"
-                    required=""
-                    type="email"
-                  />
-                  <button class="button"><i class="icofont icofont-paper-plane"></i></button>
-                </form>
               </div>
             </div>
           </div>
@@ -625,7 +603,7 @@
               <div class="copyright-content">
                 <p>
                   © Copyright 2018 | All Rights Reserved by
-                  <a href="https://google.com.com" target="_blank">Google.com</a>
+                  <a href="https://uokirkuk.edu.iq/guide/index.php" target="_blank">University of kirkuk</a>
                 </p>
               </div>
             </div>
@@ -637,44 +615,44 @@
     <!--/ End Footer Area -->
 
     <!-- jquery Min JS -->
-    <script src="js/jquery.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
     <!-- jquery Migrate JS -->
-    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <script src="../js/jquery-migrate-3.0.0.js"></script>
     <!-- jquery Ui JS -->
-    <script src="js/jquery-ui.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
     <!-- Easing JS -->
-    <script src="js/easing.js"></script>
+    <script src="../js/easing.js"></script>
     <!-- Color JS -->
-    <script src="js/colors.js"></script>
+    <script src="../js/colors.js"></script>
     <!-- Popper JS -->
-    <script src="js/popper.min.js"></script>
+    <script src="../js/popper.min.js"></script>
     <!-- Bootstrap Datepicker JS -->
-    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="../js/bootstrap-datepicker.js"></script>
     <!-- Jquery Nav JS -->
-    <script src="js/jquery.nav.js"></script>
+    <script src="../js/jquery.nav.js"></script>
     <!-- Slicknav JS -->
-    <script src="js/slicknav.min.js"></script>
+    <script src="../js/slicknav.min.js"></script>
     <!-- ScrollUp JS -->
-    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="../js/jquery.scrollUp.min.js"></script>
     <!-- Niceselect JS -->
-    <script src="js/niceselect.js"></script>
+    <script src="../js/niceselect.js"></script>
     <!-- Tilt Jquery JS -->
-    <script src="js/tilt.jquery.min.js"></script>
+    <script src="../js/tilt.jquery.min.js"></script>
     <!-- Owl Carousel JS -->
-    <script src="js/owl-carousel.js"></script>
+    <script src="../js/owl-carousel.js"></script>
     <!-- counterup JS -->
-    <script src="js/jquery.counterup.min.js"></script>
+    <script src="../js/jquery.counterup.min.js"></script>
     <!-- Steller JS -->
-    <script src="js/steller.js"></script>
+    <script src="../js/steller.js"></script>
     <!-- Wow JS -->
-    <script src="js/wow.min.js"></script>
+    <script src="../js/wow.min.js"></script>
     <!-- Magnific Popup JS -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
     <!-- Counter Up CDN JS -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <!-- Bootstrap JS -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <!-- Main JS -->
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>
