@@ -23,9 +23,10 @@ form.addEventListener("submit", (e) => {
     errors = true
   } else if (email.value.indexOf("@") === -1) {
     errorEmail.innerHTML = "Email must contain @"
-    // TODO: To change the validation rule.
-  } else if (email.value.indexOf("uk.com") === -1) {
+    errors = true
+  } else if (email.value.indexOf("@uokirkuk.edu.iq") === -1) {
     errorEmail.innerHTML = "Not allowed"
+    errors = true
   } else {
     errorEmail.innerHTML = ""
   }

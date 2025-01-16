@@ -324,3 +324,9 @@
     $(".preloader").addClass("preloader-deactivate")
   })
 })(jQuery)
+
+document.getElementById("logout").addEventListener("click", function (e) {
+  e.preventDefault()
+  localStorage.removeItem("user_info")
+  window.location.reload()
+})
