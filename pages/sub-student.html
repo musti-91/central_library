@@ -691,28 +691,6 @@
     <!-- Main JS -->
     <script src="../js/main.js"></script>
     <script type="text/javascript">
-      // check the login status
-      function checkLoginStatus() {
-        try {
-          let user = localStorage.getItem("user_info")
-
-          if (user) {
-            user = JSON.parse(user)
-            switch (user.role) {
-              case "employee":
-                window.location.href = "employee.html"
-                break
-              case "teacher":
-                window.location.href = "teacher.html"
-                break
-            }
-          } else {
-            window.location.href = "login.html"
-          }
-        } catch (error) {
-          console.log("Error: " + error)
-        }
-      }
       function injectChatbot() {
         var hccid = 59786390
         var nt = document.createElement("script")
@@ -722,7 +700,6 @@
         ct.parentNode.insertBefore(nt, ct)
       }
       injectChatbot()
-      checkLoginStatus()
     </script>
   </body>
 </html>

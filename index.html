@@ -63,12 +63,12 @@
             },
           },
         },
-      }
+      };
     </script>
   </head>
 
   <body>
-   <div style="display: flex; justify-self: center;align-self: center;"><p>Loading...</p></div> 
+    <div style="display: flex; justify-self: center; align-self: center"><p>Loading...</p></div>
     <!-- jquery Min JS -->
     <script src="js/jquery.min.js"></script>
     <!-- jquery Migrate JS -->
@@ -113,29 +113,29 @@
       // check the login status
       function checkLoginStatus() {
         try {
-          let user = localStorage.getItem("user_info")
+          let user = localStorage.getItem("user_info");
 
+          user = JSON.parse(user);
           if (user) {
-            user = JSON.parse(user)
             switch (user.role) {
               case "student":
-                window.location.href = "pages/student.html"
-                break
+                window.location.href = "pages/student.html";
+                break;
               case "teacher":
-                window.location.href = "pages/teacher.html"
-                break
+                window.location.href = "pages/teacher.html";
+                break;
               case "employee":
-                window.location.href = "pages/employee.html"
-                break
+                window.location.href = "pages/employee.html";
+                break;
             }
           } else {
-            window.location.href = "pages/login.html"
+            window.location.href = "pages/login.html";
           }
         } catch (error) {
-          console.log("Error: " + error)
+          console.log("Error: " + error);
         }
       }
-      checkLoginStatus()
+      checkLoginStatus();
     </script>
   </body>
 </html>

@@ -241,10 +241,9 @@
                     <i class="icofont-teacher"></i>
                   </div>
                   <div class="single-content">
-                    <!-- <span>Teacher</span> -->
                     <h4>Professors</h4>
-                    <p>Takes you to the professors' page</p>
-                    <a href="teacher.html">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+                    <p>Explore our  highly qualified and experienced in their respective fields</p>
+                    <a href="sub-teacher.html">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -257,10 +256,11 @@
                     <i class="icofont-student"></i>
                   </div>
                   <div class="single-content">
-                    <!-- <span>Fusce Porttitor</span> -->
                     <h4>Student</h4>
-                    <p>Takes you to the student page</p>
-                    <a href="student.html">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+                    <p>
+                      A supportive environment for students to excel academically and socially, fostering innovation and collaboration.
+                    </p>
+                    <a href="sub-student.html">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -273,10 +273,9 @@
                     <i class="icofont-users"></i>
                   </div>
                   <div class="single-content">
-                    <!-- <span>Donec luctus</span> -->
                     <h4>Information about the Library</h4>
-                    <p>About the electronic library and its features.</p>
-                    <a href="employee.html">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+                    <p>A wide range of resources, books, research papers, and digital materials to support your academic journey.</p>
+                    <a href="sub-employee.html">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
@@ -795,7 +794,7 @@
           console.log("Error: " + error)
         }
       }
-      function add_chatinline() {
+      function injectChatbot() {
         var hccid = 59786390
         var nt = document.createElement("script")
         nt.async = true
@@ -803,7 +802,7 @@
         var ct = document.getElementsByTagName("script")[0]
         ct.parentNode.insertBefore(nt, ct)
       }
-      add_chatinline()
+      injectChatbot()
       checkLoginStatus()
     </script>
   </body>
