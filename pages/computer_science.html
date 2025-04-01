@@ -167,6 +167,36 @@
     </div>
     <!-- End Breadcrumbs -->
 
+    <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow">
+      <h1 class="text-center font-bold text-2xl my-10">
+        Graduation students projects
+      </h1>
+      <label for="yearFilter" class="block text-md font-medium mb-2">
+        Choose year:
+      </label>
+      <select id="yearFilter" class="w-full p-2 border rounded mb-4" onchange="filterTable()">
+          <option value="all">
+            All
+          </option>
+      </select>
+
+      <table class="w-full border-collapse border border-gray-300">
+          <thead>
+              <tr class="bg-gray-200">
+                  <th class="border p-2">#</th>
+                  <th class="border p-2">Project</th>
+                  <th class="border p-2">
+                    Supervisor
+                  </th>
+                  <th class="border p-2">Year</th>
+              </tr>
+          </thead>
+          <tbody id="tableBody">
+
+          </tbody>
+      </table>
+  </div>
+
     <!-- Start Contact Us -->
     <section class="contact-us section">
       <div class="container">
@@ -329,5 +359,6 @@
     <script src="../js/bootstrap.min.js"></script>
     <!-- Main JS -->
     <script src="../js/main.js"></script>
+    <script src="../js/sort_projects.js"></script>
   </body>
 </html>
